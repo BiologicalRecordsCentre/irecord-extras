@@ -1,0 +1,14 @@
+<?php
+/**
+ * Implements hook_form_user_register_form_alter.
+ * Authentication for access to create, view and delete indicia form pages.
+ * @param $form
+ * @param $form_state
+ */
+function iform_form_user_register_form_alter(&$form, &$form_state) {
+  // If the Drupal field 'field_o13' exists on the user registration
+  // form, make it required.
+  if (array_key_exists('field_o13', $form)){
+    $form['field_o13'][LANGUAGE_NONE]['#required'] = TRUE;
+  }
+}

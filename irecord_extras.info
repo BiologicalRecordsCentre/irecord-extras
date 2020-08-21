@@ -1,0 +1,4 @@
+name = iRecord extras
+description = Module for providing extra Drupal functionality for the iRecord site.
+core = 7.x
+package = iRecord 
